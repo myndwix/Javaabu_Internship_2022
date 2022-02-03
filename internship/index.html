@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javaabu</title>
+    <link rel="icon" href="./public/icons/favicon.svg" sizes="any" type="image/svg+xml">   
+    <link rel="stylesheet" href="./public/css/tailwind.css">
+    <script src="./public/js/script.js" defer></script>
+</head>
+<body class="bg-gradient-to-r from-purple-100 to-blue-100">
+    <div>
+        <div class="w-full h-screen-h16 sm:h-screen min-h-screen">           
+            <header class="sticky top-0 z-50">
+                <div class="flex justify-between w-full px-7 bg-gradient-to-r from-purple-100 to-blue-100 z-50">
+                    <div class="flex items-center">
+                        <img class="w-10 sm:w-14" src="./public/icons/icon_javaabu.svg" alt="Javaabu Logo">
+                    </div>
+        
+                    <div class="flex items-center sm:hidden">
+                        <img id="btn-mobilemenu" class="cursor-pointer" src="./public/icons/icon_mobilemenu.svg" width="25px" alt="Mobile Menu Icon">
+                        <img id="btn-mobilemenuclose" class="hidden cursor-pointer" src="./public/icons/icon_close.svg" width="25px" alt="Mobile Menu Icon">
+                    </div>
+        
+                    <nav class="hidden sm:flex sm:items-center">
+                        <a class="px-4 py-2 text-gray-600 hover:text-gray-800 transition duration-500" href="#">Products</a>
+                        <a class="px-4 py-2 text-gray-600 hover:text-gray-800 transition duration-500" href="#">Services</a>
+                        <a class="px-4 py-2 text-gray-600 hover:text-gray-800 transition duration-500" href="#">Support</a>
+                        <button class="bg-indigo-500 text-white py-1 px-3 ml-4 rounded-md ring-4 ring-indigo-300 ring-offset-2 hover:bg-indigo-600 focus:ring-indigo-500">Javaabu Academy</button>
+                    </nav>                                 
+                </div>
+            </header>
+
+            <nav id="mobilemenu" class="hidden sm:hidden flex flex-col justify-between pb-4 bg-gray-300 absolute top-14 right-0 bottom-0 left-0 z-50 bg-gradient-to-r from-purple-100 to-blue-100 z-50">
+                <div class="flex flex-col">
+                    <a class="px-4 py-4 text-gray-600 hover:bg-purple-200 transition duration-300" href="#">Products</a>
+                    <a class="px-4 py-4 text-gray-600 hover:bg-purple-200 transition duration-300" href="#">Services</a>
+                    <a class="px-4 py-4 text-gray-600 hover:bg-purple-200 transition duration-300" href="#">Support</a>
+                </div>
+                
+                <div class="mx-4">
+                    <button class="bg-indigo-500 text-white py-2 rounded-md w-full mt-3 ring-4 ring-indigo-300">Javaabu Academy</button>
+                </div>      
+            </nav>
+
+            <section>
+                <div class="w-full p-10 text-center">
+                    <p class="text-lg md:text-xl text-gray-600">with highly skilled experts</p>
+                    <p class="text-3xl md:text-4xl font-semibold text-gray-800">Expand your business to</p>
+                    <p class="text-3xl md:text-4xl font-semibold text-gray-800">the next level</p>
+                </div>
+        
+                <div class="flex justify-center w-full">
+                    <div class="bg-macbook bg-no-repeat bg-contain w-104 h-80"></div>
+                    <div class="w-full md:w-120  absolute flex justify-center h-80">
+                        <div id="card-webdesign" class="flex items-center rounded-2xl mt-3 absolute bg-gray-100 shadow-xl p-4 z-30 transition-all duration-500 md:left-5 md:mt-4">
+                            <div>
+                                <p class="text-gray-600 font-bold">Web Design</p>
+                                <p class="text-gray-800">Simple interactive modern<br>UI/UX designs for better user<br>experience</p>
+                            </div>
+                            <div>
+                                <img class="w-20 ml-3" src="./public/icons/icon_webdesign.svg" alt="">
+                            </div>
+                        </div>
+            
+                        <div id="card-appdevelopment" class="flex items-center rounded-2xl mt-14 absolute bg-gray-100 shadow-xl p-4 z-20 md:mt-9 md:right-10 transition-all duration-500">
+                            <div>
+                                <p class="text-gray-600 font-bold">App Development</p>
+                                <p class="text-gray-800">Resposive accross all the devices<br>and built for your desired OS with<br>the latest technology</p>
+                            </div>
+                            <div>
+                                <img class="w-20 ml-3" src="./public/icons/icon_appdevelopment.svg" alt="">
+                            </div>
+                        </div>
+            
+                        <div id="card-graphicdesign" class="flex items-center rounded-2xl mt-32 absolute bg-gray-100 shadow-xl p-4 z-10 md:left-0 md:mt-36 transition-all duration-500">
+                            <div>
+                                <img class="w-20 mr-3" src="./public/icons/icon_graphicdesign.svg" alt="">
+                            </div>
+                            <div>
+                                <p class="text-gray-600 font-bold">Graphic Design</p>
+                                <p class="text-gray-800">Impressive animations, vector arts,<br>photo manipulation etc with<br>professional artists</p>
+                            </div>
+                        </div>
+            
+                        <div id="card-consulting" class="flex items-center rounded-2xl mt-52 absolute bg-gray-100 shadow-xl p-4 md:right-20 md:mt-44 transition-all duration-500">
+                            <div>
+                                <img class="w-20 mr-3" src="./public/icons/icon_consulting.svg" alt="">
+                            </div>
+                            <div>
+                                <p class="text-gray-600 font-bold">Consulting</p>
+                                <p class="text-gray-800">Resolve it with the help of<br>highly skilled experts</p>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+            </section>
+
+            <section>
+                <div class="flex justify-center w-full py-20">
+                    <div class="text-center px-5">
+                        <p class="text-3xl sm:text-4xl font-semibold text-gray-600 font-mono">100+</p>
+                        <p class="text-sm text-gray-600">Successful Projects</p>
+                    </div>
+                    <div class="text-center px-5">
+                        <p class="text-3xl sm:text-4xl font-semibold text-gray-600 font-mono">50+</p>
+                        <p class="text-sm text-gray-600">Clients</p>
+                    </div>
+                    <div class="text-center px-5">
+                        <p class="text-3xl sm:text-4xl font-semibold text-gray-600 font-mono">7+</p>
+                        <p class="text-sm text-gray-600">Courses</p>
+                    </div>
+                    <div class="text-center px-5">
+                        <p class="text-3xl sm:text-4xl font-semibold text-gray-600 font-mono">500+</p>
+                        <p class="text-sm text-gray-600">Students</p>
+                    </div>
+                </div>  
+            </section>                                           
+        </div>
+
+        <section>
+            <div class="flex flex-col md:flex-row justify-center items-center pt-20 pb-28 px-10">
+                <div class="h-64 md:w-80 md:h-52 bg-white rounded-xl shadow-xl flex flex-col justify-center px-6 z-50 min-w-s max-w-lg md:mb-3">
+                    <div class="flex items-center mb-3">
+                        <div class="flex items-center font-semibold text-gray-900">
+                            <a href="https://twitter.com/javaabumv/status/1333057764009017350?s=20&t=HepbPSEPLStoc8ZetaFA6Q">
+                                <div class="rounded-full bg-gray-100 w-14 h-14 flex justify-center items-center p-2 mr-2">
+                                    <img class="w-8" src="./public/icons/icon_javaabu.svg" alt="Javaabu Logo">
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com/javaabumv/status/1333057764009017350?s=20&t=HepbPSEPLStoc8ZetaFA6Q" target="_blank"><p class="font-semibold hover:text-indigo-600 transition duration-300">Javaabu</p></a>
+                            <p class="text-sm text-gray-500">@javaabumv</p>
+                        </div>
+                       
+                    </div>               
+                    <p class="text-gray-700">Starting Batch 2 of our Online Course -No-code Mobile Application Development for beginners.</p>
+                </div>
+                <div class="h-64 md:w-80 md:h-52 bg-white rounded-xl shadow-xl flex flex-col justify-center px-6 z-40 min-w-s max-w-lg">
+                    <div class="flex items-center mb-3">
+                        <div class="flex items-center font-semibold text-gray-900">
+                            <a href="https://twitter.com/MoYSCEmv/status/1412334784525705218?s=20&t=j9QTemzZePGGNiYehGQt-w">
+                                <div class="rounded-full bg-gray-100 w-14 h-14 flex justify-center items-center p-2 mr-2">
+                                    <img class="w-8" src="./public/icons/repofmaldives.svg" alt="Javaabu Logo">
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com/MoYSCEmv/status/1412334784525705218?s=20&t=j9QTemzZePGGNiYehGQt-w" target="_blank"><p class="font-semibold hover:text-indigo-600 transition duration-300">Ministry of Youth</p></a>
+                            <p class="text-sm text-gray-500">@MoYSCEmv</p>
+                        </div>
+                       
+                    </div>               
+                    <p class="text-gray-700">We have signed an agreement with Javaabu Pvt Ltd to develop a sports facility booking module.</p>
+                </div>
+                <div class="h-64 md:w-80 md:h-52 bg-white rounded-xl shadow-xl flex flex-col justify-center px-6 z-30 min-w-s max-w-lg md:mt-3">
+                    <div class="flex items-center mb-3">
+                        <div class="flex items-center font-semibold text-gray-900">
+                            <a href="https://twitter.com/Mv_Peace/status/1434538844347535364?s=20&t=HepbPSEPLStoc8ZetaFA6Q">
+                                <div class="rounded-full bg-gray-100 w-14 h-14 flex justify-center items-center p-2 mr-2">
+                                    <img class="w-8" src="./public/icons/peacefoundation.svg" alt="Javaabu Logo">
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com/Mv_Peace/status/1434538844347535364?s=20&t=HepbPSEPLStoc8ZetaFA6Q" target="_blank"><p class="font-semibold hover:text-indigo-600 transition duration-300">Pease Foundation</p></a>
+                            <p class="text-sm text-gray-500">@Mv_Peace</p>
+                        </div>
+                       
+                    </div>               
+                    <p class="text-gray-700">Its was a pleasure meeting the innovative team of 
+                        @javaabumv. Insha Allah we will be partnering with Javaabu.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="flex justify-between w-full bg-white px-5 sm:px-20 py-16">
+                <address class="flex gap-1 items-start not-italic text-sm font-base text-gray-500 leading-6">
+                    <svg class="text-gray-500 fill-current w-5 h-5" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    <path d="M12,2C8.134,2,5,5.134,5,9c0,3.966,4.404,9.82,6.226,12.071c0.4,0.494,1.148,0.494,1.548,0C14.596,18.82,19,12.966,19,9 C19,5.134,15.866,2,12,2z M12,11.5c-1.381,0-2.5-1.119-2.5-2.5c0-1.381,1.119-2.5,2.5-2.5s2.5,1.119,2.5,2.5 C14.5,10.381,13.381,11.5,12,11.5z"/></svg>
+                    M. Banff Villa 3A<br>
+                    Majeedhee Magu<br>
+                    Male', 20259<br>
+                    Rep. of Maldives
+                </address>
+    
+                <div class="flex items-center">
+                    <a href="#">
+                        <svg class="text-gray-500 fill-current w-10 h-10" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    <path d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"/></svg>
+                    </a>
+                    
+                    <a href="#">
+                        <svg class="text-gray-500 fill-current w-10 h-10" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="24px" height="24px">    <path d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M36.237,20.524 c0.01,0.236,0.016,0.476,0.016,0.717C36.253,28.559,30.68,37,20.491,37c-3.128,0-6.041-0.917-8.491-2.489 c0.433,0.052,0.872,0.077,1.321,0.077c2.596,0,4.985-0.884,6.879-2.37c-2.424-0.044-4.468-1.649-5.175-3.847 c0.339,0.065,0.686,0.1,1.044,0.1c0.505,0,0.995-0.067,1.458-0.195c-2.532-0.511-4.441-2.747-4.441-5.432c0-0.024,0-0.047,0-0.07 c0.747,0.415,1.6,0.665,2.509,0.694c-1.488-0.995-2.464-2.689-2.464-4.611c0-1.015,0.272-1.966,0.749-2.786 c2.733,3.351,6.815,5.556,11.418,5.788c-0.095-0.406-0.145-0.828-0.145-1.262c0-3.059,2.48-5.539,5.54-5.539 c1.593,0,3.032,0.672,4.042,1.749c1.261-0.248,2.448-0.709,3.518-1.343c-0.413,1.292-1.292,2.378-2.437,3.064 c1.122-0.136,2.188-0.432,3.183-0.873C38.257,18.766,37.318,19.743,36.237,20.524z"/></svg>
+                    </a>
+                </div>
+    
+                <address class="flex flex-col not-italic text-sm font-base text-gray-500">
+                    <div class="flex gap-2 pb-2">
+                    <svg class="text-gray-500 fill-current w-5 h-5" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    <path d="M20.023,15.488c-0.63-0.015-1.423-0.052-1.924-0.14c-0.542-0.096-1.194-0.282-1.653-0.425 c-0.36-0.112-0.752-0.013-1.019,0.253L13.21,17.38c-1.532-0.807-2.759-1.747-3.798-2.792c-1.045-1.039-1.985-2.266-2.792-3.798 l2.204-2.218C9.09,8.305,9.189,7.913,9.077,7.553C8.935,7.095,8.748,6.443,8.653,5.901C8.564,5.4,8.528,4.607,8.512,3.977 C8.499,3.432,8.055,3,7.51,3H4C3.562,3,3,3.328,3,4c0,4.539,1.84,8.874,4.966,12.034C11.126,19.16,15.461,21,20,21 c0.672,0,1-0.562,1-1v-3.51C21,15.945,20.568,15.501,20.023,15.488z"/></svg>+(960) 331 5282
+                    </div>
+                    <div class="flex gap-2 pb-2">
+                    <svg class="text-gray-500 fill-current w-5 h-5" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    <path d="M20.023,15.488c-0.63-0.015-1.423-0.052-1.924-0.14c-0.542-0.096-1.194-0.282-1.653-0.425 c-0.36-0.112-0.752-0.013-1.019,0.253L13.21,17.38c-1.532-0.807-2.759-1.747-3.798-2.792c-1.045-1.039-1.985-2.266-2.792-3.798 l2.204-2.218C9.09,8.305,9.189,7.913,9.077,7.553C8.935,7.095,8.748,6.443,8.653,5.901C8.564,5.4,8.528,4.607,8.512,3.977 C8.499,3.432,8.055,3,7.51,3H4C3.562,3,3,3.328,3,4c0,4.539,1.84,8.874,4.966,12.034C11.126,19.16,15.461,21,20,21 c0.672,0,1-0.562,1-1v-3.51C21,15.945,20.568,15.501,20.023,15.488z"/></svg>+(960) 752 8222
+                    </div>
+                    <div class="flex gap-2">
+                        <svg class="text-gray-500 fill-current w-5 h-5" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512" width="24px" height="24px"><path d="M 91 123.08984 A 19.929 19.929 0 0 0 77.363281 128.4707 L 242.83594 239.87695 A 19.956 19.956 0 0 0 264.99023 240.04492 L 435.1582 128.97852 A 19.936 19.936 0 0 0 421 123.08984 L 91 123.08984 z M 71 148.30078 L 71 368.91016 A 20.023 20.023 0 0 0 91 388.91016 L 421 388.91016 A 20.023 20.023 0 0 0 441 368.91016 L 441 149.04883 L 275.93359 256.78516 A 39.9 39.9 0 0 1 231.6543 256.45703 L 71 148.30078 z"/></svg>info@javaabu.com
+                    </div>
+                </address>   
+            </div>
+        </footer>       
+    </div>
+
+</body>
+</html>
